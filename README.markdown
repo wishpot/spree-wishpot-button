@@ -1,4 +1,5 @@
-= The Wishpot Button
+The Wishpot Button
+======
 
 Each extension loaded by Spree will override the views and stylesheets of those that precede so you will need to configure their load order. Put something like the following in the file config/preinitializer.rb:
 
@@ -7,7 +8,7 @@ Each extension loaded by Spree will override the views and stylesheets of those 
 SUMMARY
 =======
 
-Wishpot is a free universal wishlist and gift registry service. This extension adds an "add to wishlist" button next to your "add to cart" button for integration with Wishpot.com.  The benefits of a universal registry over a store-specific registry are numerous, but primarily users are less likely to abandon their wishlists when they have the added utility of being able to use them at multiple stores.
+Wishpot is a free universal wishlist and gift registry service. This extension adds an "add to wishlist" button next to your "add to cart" button for integration with Wishpot.com.  The benefits of a universal registry over a store-specific registry are numerous, but primarily users are less likely to abandon their wishlists when they have the added utility of being able to use them at multiple stores. For more information [go here](bit.ly/addtowishpotbutton).
 
 
 OPTIONAL CONFIGURATION
