@@ -1,0 +1,17 @@
+<div class="wishpot_form">
+<form method="post" action="http://www.wishpot.com/my/wishes/add.aspx" onSubmit="return false;">
+    <!--the partner key-->
+<%=Spree::GoogleBase::Config[:google_base_ftp_username]%>
+<%=Spree::WishpotButton::Config[:google_base_ftp_username]%>
+    <input name="pkey" value="<%=Spree::WishpotButton::Config[:wishpot_pkey]%>" type="hidden">
+    <input name="WishUrl" value="<%= product_url(@product)%>" type="hidden">
+    <input name="WishTitle" value="<%=h(@product.name)%>" type="hidden">
+    <input name="Price" value="<%= product_price(@product) %>" type="hidden">
+    <!-- Display the image source and size for the product (size required) -->
+	<%if !@product.images.first.nil? and !@product.images.first.attachment.nil? then%>
+    <input name="ImgSrc" value="<%=@product.images.first.attachment.url%>" type="hidden">
+	<%end%>
+    <!-- There are a few buttons to choose from.  Simply replace the src attribute -->
+    <input type="image" title="Add to Wishlist at Wishpot" src="<%=Spree::WishpotButton::Config[:wishpot_button_image]%>" alt="Add to Wishpot" onClick="if(document.getElementById){window.WISHPOT_FORM=this.parentNode;var x=document.getElementsByTagName('head').item(0);var o=document.createElement('script');if(typeof(o)!='object') o=document.standardCreateElement('script');o.setAttribute('src','http://www.wishpot.com/scripts/bm.js?v=100');o.setAttribute('type','text/javascript');x.appendChild(o);} return false;" style="margin: 5px 0 0 5em;" />
+</form>
+</div>
