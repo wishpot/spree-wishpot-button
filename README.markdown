@@ -9,6 +9,7 @@ Wishpot is a free universal wishlist and gift registry service. This extension a
 Installation
 -------
 Install the extension with one of the following commands:
+
 1. git clone git@github.com:wishpot/spree-wishpot-button.git wishpot_button
 2. script/extension install git@github.com:wishpot/spree-wishpot-button.git
 
