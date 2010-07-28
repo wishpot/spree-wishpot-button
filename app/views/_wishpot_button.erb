@@ -1,8 +1,6 @@
 <div class="wishpot_form">
 <form method="post" action="http://www.wishpot.com/my/wishes/add.aspx" onSubmit="return false;">
     <!--the partner key-->
-<%=Spree::GoogleBase::Config[:google_base_ftp_username]%>
-<%=Spree::WishpotButton::Config[:google_base_ftp_username]%>
     <input name="pkey" value="<%=Spree::WishpotButton::Config[:wishpot_pkey]%>" type="hidden">
     <input name="WishUrl" value="<%= product_url(@product)%>" type="hidden">
     <input name="WishTitle" value="<%=h(@product.name)%>" type="hidden">
